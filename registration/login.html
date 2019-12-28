@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+
+{% block header-footer %}
+    <div class="container col-sm-4 mx-auto" style="margin: 90px;">
+        <h3>Login</h3><br>
+        <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            {% bootstrap_form form %}<br>
+            <input class="btn" type="submit" value="login"/><br>
+            <hr>
+            <input type="hidden" name="next" value="{{ next }}"/>
+        </form>
+        <p><a href="{% url 'password_reset' %}">Forgot password?</a>
+        <a href="{% url 'signup' %}">New user?</a></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block header-footer %}
+    <div class="container col-sm-4 mx-auto" style="margin: 90px;">
+        <h2>Sign up</h2><br>
+        <form method="post" action="{% url 'signup' %}">
+            {% csrf_token %}
+            {% bootstrap_form user_form %}<br>
+            <button class="btn" type="submit">Sign up</button>
+            <hr>
+            <p>Already have account? <a href="{% url 'login' %}">Login</a></p>
+        </form>
+    </div>
+{% endblock %}
