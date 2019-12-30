@@ -6,9 +6,7 @@ It requires ```django.contrib.auth``` installed in your ```INSTALLED_APPS```, wh
 ## Setup and install
 The templates come with pre-configured [Bootstrap4](https://pypi.org/project/django-bootstrap4/) Forms. Install it using, ```pip install django-bootstrap4``` and include ```bootstrap4``` in your ```INSTALLED_APPS``` in settings.py file.
 
-It inherit from ```base.html``` template, add or remove it for your use.
-
-And finally, clone the repo and copy registration directory in your base templates directory.
+And finally, clone the repo and copy registration directory in your base templates directory. Also, it inherit from ```base.html``` template, add or remove it for your use.
 
 ## Usages
 
