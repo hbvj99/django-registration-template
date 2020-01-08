@@ -4,7 +4,7 @@ Django-registration templates for User request handling. The HTML documents in [
 It requires ```django.contrib.auth``` installed in your ```INSTALLED_APPS```, which comes with pre-installed in most latest Django.
 
 ## Setup and install
-The templates come with pre-configured [Bootstrap4](https://pypi.org/project/django-bootstrap4/) Forms. Install it using, ```pip install django-bootstrap4``` and include ```bootstrap4``` in your ```INSTALLED_APPS``` in settings.py file.
+The templates come with pre-configured [Bootstrap4](https://pypi.org/project/django-bootstrap4/) Form tags. Install it using, ```pip install django-bootstrap4``` and include ```bootstrap4``` in your ```INSTALLED_APPS``` in settings.py file.
 
 And finally, clone the repo and copy registration directory in your base templates directory. Also, it inherit from ```base.html``` template, add or remove it for your use.
 
